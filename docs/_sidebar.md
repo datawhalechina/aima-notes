@@ -1,0 +1,6 @@
+- 第一章 绪论
+  - [第一章习题](/chap1_Introduction/Exercise)
+- 第二章 智能体
+  - [第二章习题](/chap2_Intelligent_Agents/Exercise)
+- 第三章 通过搜索进行问题求解
+  - [第三章习题](/chap3_Solving_Problems_By_Searching/Exercise)
