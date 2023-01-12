@@ -21,6 +21,9 @@
 | Task06   |  3.6 启发式函数 | 2-3 —— 2-5 |
 | Task07   |  总结与回顾 | 2-5 —— 2-6 |
 
+## 拓展材料
+书籍配套代码：https://github.com/aimacode
+
 ## 购书福利
 Datawhale专属五折优惠<br>
 平装版：https://u.jd.com/4dVt4LN<br>
