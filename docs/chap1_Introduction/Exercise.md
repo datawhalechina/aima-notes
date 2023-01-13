@@ -31,6 +31,10 @@
 
 ## Answer： 
 
+>
+>
+>
+
 
 
 # Exercise 4
@@ -95,15 +99,13 @@
 
 >“Surely animals cannot be intelligent—they can do only what their genes tell them.” Is the latter statement true, and does it imply the former?
 >
->“动物当然不可能是聪明的，它们只能按照基因的指示行事。”后一种说法是真的吗？这是否意味着前者？
+>“动物当然不可能是聪明的，它们只能按照基因的指示行事。”后一种说法是正确的吗？这是否意味着前者也是正确的？
 
 
 
 ## Answer： 
 
->
->
->
+>后一种说法不正确，基因能决定一部分，但是个体在环境当中也能产生适应环境指示的行为。比如狗看到肉骨头会去吃，但是经过环境当中人的训练，人可以告诉狗不要吃肉骨头，而这时候狗也就不完全受基因影响而一定马上会去吃肉骨头。当然，这也不能说明动物是不聪明的，反而大部分动物都很聪明。比如狼有很好的团队合作，这是很聪明的。这些既有先天基因决定的一部分，也有后天学习的一部分。
 
 
 
@@ -111,13 +113,11 @@
 
 >“Surely animals, humans, and computers cannot be intelligent—they can do only what their constituent atoms are told to do by the laws of physics.” Is the latter statement true, and does it imply the former?
 >
->“当然，动物、人类和计算机不可能是智能的，它们只能做物理定律告诉它们的组成原子做的事情。”后一种说法是真的吗？这是否意味着前者？
+>“当然，动物、人类和计算机不可能是智能的，它们只能做物理定律告诉它们的组成原子做的事情。”后一种说法是正确的吗？这是否意味着前者也是正确的？
 
 
 
 ## Answer： 
 
->
->
->
+>后一种说法不正确，人类不仅能做已发现的物理定律范围内的事情，人类还能探索更多尚未发现科学。计算机不仅能做现在已有程序所能执行的范围内的事情，还能进行深度学习，做更多自己以前不能做且未知的事情。动物的进化，也证明了动物也是可以做到之前所受定律限制而不能做的事情。这意味着动物、人类、计算机都可能是智能的。
 
