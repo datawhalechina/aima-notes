@@ -85,9 +85,9 @@
 
 # Exercise 17
 
+>“Surely animals, humans, and computers cannot be intelligent—they can do only what their constituent atoms are told to do by the laws of physics.” Is the latter statement true, and does it imply the former?
 >
->
->
+>“当然，动物，人类和计算机不能聪明 - 它们只能按照物理定律告知其成分原子的操作。”后一种陈述是真的，这是否暗示着前者？
 
 
 
