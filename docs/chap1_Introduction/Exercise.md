@@ -21,39 +21,75 @@
 
 ## Answer： 
 
+
+
 # Exercise 4
 
+>Are reflex actions (such as flinching from a hot stove) rational? Are they intelligent?
 >
+>反射动作（例如从热炉中退缩）是否合理？他们聪明吗？
+
+
 
 ## Answer： 
+
+
 
 # Exercise 5
 
 >
+>
+>
+
+
 
 ## Answer： 
+
+
 
 # Exercise 6
 
 >
+>
+>
+
+
 
 ## Answer： 
+
+
 
 # Exercise 15
 
 >
+>
+>
+
+
 
 ## Answer： 
+
+
 
 # Exercise 16
 
 >
+>
+>
+
+
 
 ## Answer： 
+
+
 
 # Exercise 17
 
 >
+>
+>
+
+
 
 ## Answer： 
 
