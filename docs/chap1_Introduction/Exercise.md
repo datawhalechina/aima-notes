@@ -79,11 +79,17 @@
 
 >“Surely computers cannot be intelligent—they can do only what their programmers tell them.” Is the latter statement true, and does it imply the former?
 >
->“当然，计算机不能聪明，他们只能做程序员告诉他们的事情。”后一种陈述是真的，这是否暗示着前者？
+>“当然，计算机不可能是智能的，他们只能按照程序员的指示去做。”后一种说法是正确的吗？这是否意味着前者也是正确的？
 
 
 
 ## Answer： 
+
+>
+>
+>
+
+
 
 
 
