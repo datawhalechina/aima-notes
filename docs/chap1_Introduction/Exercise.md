@@ -21,3 +21,39 @@
 
 ## Answer： 
 
+# Exercise 4
+
+>
+
+## Answer： 
+
+# Exercise 5
+
+>
+
+## Answer： 
+
+# Exercise 6
+
+>
+
+## Answer： 
+
+# Exercise 15
+
+>
+
+## Answer： 
+
+# Exercise 16
+
+>
+
+## Answer： 
+
+# Exercise 17
+
+>
+
+## Answer： 
+
