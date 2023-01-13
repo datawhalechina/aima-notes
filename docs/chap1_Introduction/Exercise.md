@@ -95,7 +95,7 @@
 
 >“Surely animals cannot be intelligent—they can do only what their genes tell them.” Is the latter statement true, and does it imply the former?
 >
->“当然，动物不能聪明 - 它们只能做他们的基因告诉他们的事情。”后一种陈述是真的，这是否暗示着前者？
+>“动物当然不可能是聪明的，它们只能按照基因的指示行事。”后一种说法是真的吗？这是否意味着前者？
 
 
 
@@ -111,7 +111,7 @@
 
 >“Surely animals, humans, and computers cannot be intelligent—they can do only what their constituent atoms are told to do by the laws of physics.” Is the latter statement true, and does it imply the former?
 >
->“当然，动物，人类和计算机不能聪明 - 它们只能按照物理定律告知其成分原子的操作。”后一种陈述是真的，这是否暗示着前者？
+>“当然，动物、人类和计算机不可能是智能的，它们只能做物理定律告诉它们的组成原子做的事情。”后一种说法是真的吗？这是否意味着前者？
 
 
 
