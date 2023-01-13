@@ -65,11 +65,13 @@
 
 >Suppose we extend Evans’s *SYSTEM* program so that it can score 200 on a standard IQ test. Would we then have a program more intelligent than a human? Explain.
 >
->假设我们扩展了Evans的系统程序，以便它可以在标准智商测试中得分200。然后，我们的计划比人类更聪明吗？解释。
+>假设我们扩展了Evans的SYSTEM程序，使其在标准智商测试中可以获得200分。那么我们会有一个比人类更聪明的程序吗？
 
 
 
 ## Answer： 
+
+>目前还不能做到一个比人类更聪明的程序，即使其在标准智商测试能获得200分。目前人工智能也只能在单一方面或者某些方面有较出色的表现，在综合方面的学习与表现是远不如人类的。智商测试虽然能达到200分，那也只是在智商测试这一方面很卓越，在其他方面并不能表现都很出色。
 
 
 
