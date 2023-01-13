@@ -75,7 +75,7 @@
 
 >“Surely animals cannot be intelligent—they can do only what their genes tell them.” Is the latter statement true, and does it imply the former?
 >
->
+>“当然，动物不能聪明 - 它们只能做他们的基因告诉他们的事情。”后一种陈述是真的，这是否暗示着前者？
 
 
 
