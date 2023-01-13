@@ -37,11 +37,15 @@
 
 >Are reflex actions (such as flinching from a hot stove) rational? Are they intelligent?
 >
->反射动作（例如从热炉中退缩）是否合理？他们聪明吗？
+>反射动作（例如从热炉中退缩）是否合理？他们智能吗？
 
 
 
 ## Answer： 
+
+>反射动作是合理的。反射动作通常比经过深思熟虑后采取的较慢的动作更为成功，它属于理性行为的一种方式，而理性行为是理性智能体方法，它也是智能的。
+>
+>
 
 
 
