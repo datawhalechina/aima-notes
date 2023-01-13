@@ -37,9 +37,9 @@
 
 # Exercise 5
 
+>There are well-known classes of problems that are intractably difficult for computers, and other classes that are provably undecidable. Does this mean that AI is impossible?
 >
->
->
+>对于计算机而言，有一些知名的问题非常困难，而其他类似的类别则是不可决定的。这是否意味着AI是不可能的？
 
 
 
@@ -49,9 +49,9 @@
 
 # Exercise 6
 
+>Suppose we extend Evans’s *SYSTEM* program so that it can score 200 on a standard IQ test. Would we then have a program more intelligent than a human? Explain.
 >
->
->
+>假设我们扩展了Evans的系统程序，以便它可以在标准智商测试中得分200。然后，我们的计划比人类更聪明吗？解释。
 
 
 
@@ -61,9 +61,9 @@
 
 # Exercise 15
 
+>“Surely computers cannot be intelligent—they can do only what their programmers tell them.” Is the latter statement true, and does it imply the former?
 >
->
->
+>“当然，计算机不能聪明，他们只能做程序员告诉他们的事情。”后一种陈述是真的，这是否暗示着前者？
 
 
 
