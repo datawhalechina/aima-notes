@@ -51,7 +51,7 @@
 
 >There are well-known classes of problems that are intractably difficult for computers, and other classes that are provably undecidable. Does this mean that AI is impossible?
 >
->对于计算机而言，有一些知名的问题非常困难，而其他类似的类别则是不可决定的。这是否意味着AI是不可能的？
+>有一些众所周知的问题是计算机难以解决的，还有一些问题是无法确定的。这是否意味着人工智能是不可能的？
 
 
 
