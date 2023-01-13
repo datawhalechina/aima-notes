@@ -3,10 +3,12 @@
 # Exercise 1
 
 > Define in your own words: (a) intelligence, (b) artificial intelligence, (c) agent, (d) rationality, (e) logical reasoning.
+>
+> 用您自己的话来定义：（a）智能，（b）人工智能，（c）智能体，（d）理性，（e）逻辑推理。
 
 
 
-## Answer :
+## Answer ：
 
 
 
@@ -15,5 +17,5 @@
 
 
 
-## Answer
+## Answer：
 
