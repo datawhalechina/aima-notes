@@ -25,15 +25,13 @@
 # Exercise 2
 > Read Turing’s original paper on AI Turing:1950 .In the paper, he discusses several objections to his proposed enterprise and his test for intelligence. Which objections still carry weight? Are his refutations valid? Can you think of new objections arising from developments since he wrote the paper? In the paper, he predicts that, by the year 2000, a computer will have a 30% chance of passing a five-minute Turing Test with an unskilled interrogator. What chance do you think a computer would have today? In another 50 years?
 >
-> 阅读图灵关于 AI Turing:1950 的原始论文。在论文中，他讨论了对他提出的企业和他的智能测试的几点反对意见。哪些反对意见仍然有分量？他的反驳是否有效？你能想到自从他写这篇论文以来，事态发展引发的新的反对意见吗？在论文中，他预测到2000年，计算机将有30%的几率通过五分钟的图灵测试，而不需要熟练的询问器。你认为今天电脑有什么机会？再过50年？
+> 阅读图灵关于 AI Turing:1950 的原始论文。在论文中，他讨论了对他提出的企业和他的智能测试的几点反驳意见。哪些反对意见仍然有分量？他的反驳是否有效？你能想到自从他写这篇论文以来，事态发展引发的新的反对意见吗？在论文中，他预测到2000年，计算机将有30%的几率通过五分钟的图灵测试，而不需要熟练的询问器。你认为今天电脑有什么机会？再过50年？
 
 
 
 ## Answer： 
 
->神学论点
->
->
+>图灵的九条反驳意见至今仍有分量且有效，他们分别是：神学论点，“鸵鸟”式论点，数学论点，意识论点，种种能力限制的论点，创新论点，神经系统连续性论点，行为变通性论点，超感知论点。今天的电脑拥有更加强大的算力，比以前更加优秀的深度学习，强化学习等方法。因此如今的电脑在很多方面都能做的比人类还好，比如图像识别的正确率方面。如果再过50年，很难想象，我认为机器的发展速度和学习能力比人类强太多太多了，也许会有颠覆认知东西产生。
 
 
 
