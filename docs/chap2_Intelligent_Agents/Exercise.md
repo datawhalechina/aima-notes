@@ -178,16 +178,16 @@
 
 # Exercise 16
 
->The vacuum environments in the preceding exercises have all been deterministic. Discuss possible agent programs for each of the following stochastic versions:
+> The vacuum environments in the preceding exercises have all been deterministic. Discuss possible agent programs for each of the following stochastic versions:
 > 1. Murphy’s law: twenty-five percent of the time, the $Suck$ action fails to clean the floor if it is dirty and deposits dirt onto the floor if the floor is clean. How is your agent program affected if the dirt sensor gives the wrong answer 10% of the time?
 > 2. Small children: At each time step, each clean square has a 10% chance of becoming dirty. Can you come up with a rational agent design for this case?
 
-### 翻译
-> 前面练习中的真空环境都是确定性的。下面讨论一下以下每个随机版本的可能代理程序。
+> **翻译**\
+前面练习中的真空环境都是确定性的。下面讨论一下以下每个随机版本的可能代理程序。
 > 1. 墨菲定律：25%的时间里，如果地板是脏的，$吸吮$动作就不能清洁; 如果地板是干净的，就会在地板上沉积灰尘。如果污垢传感器在10%的时间内给出错误的答案，你的代理程序会受到什么影响？
 > 2. Small children：在每个时间步骤中，每个干净的方块有10%的机会变脏。你能为这种情况想出一个合理的代理设计吗？
 
-### 参考答案
+**参考答案**
 >1. The failure of $Suck$ action doesn’t cause any problem at all as long as we replace
 the reflex agent’s $‘Suck’$ action by $‘Suck\ until\ clean’$\
 If the dirt sensor can be wrong on each step, then the agent
