@@ -127,7 +127,6 @@
 在第116页 ，我们定义了 8 数码问题的松弛问题：*如果方格 B 是空格，那么滑块可以从方格 A 移动到方格 B*。 这个问题的精确解定义了Gaschnig启发式函数（Gaschnig:1979）。\
 请解释为什么Gaschnig的启发式至少和$h1$（错位的瓷砖）一样准确，并说明它比$h1$和$h2$（曼哈顿距离）都要准确的情况。如何有效地计算Gaschnig的启发式函数。
 # Exercise 40
-We gave two simple heuristics for the 8-puzzle: Manhattan distance and misplaced tiles. Several heuristics in the literature purport to improve on this—see, for example, [Nilsson:1971](#), [Mostow+Prieditis:1989](https://www.ijcai.org/Proceedings/89-1/Papers/112.pdf), and [Hansson+al:1992](https://journals.lww.com/spinejournal/Abstract/1991/01000/A_Prospective_Study_of_Work_Perceptions_and.1.aspx). Test these claims by implementing the heuristics and comparing the performance of the resulting algorithms.\
-**翻译:**\
-我们为 8 数码问题给出了两个简单的启发式函数方案：曼哈顿距离和错位的瓷砖。文献中的一些启发式函数算法声称在此基础上进行了改进，例如，Nilsson:1971, Mostow+Prieditis:1989, 和Hansson+al:1992。\
-通过实现启发式函数，比较这些算法的性能来验证这些说法。
+> We gave two simple heuristics for the 8-puzzle: Manhattan distance and misplaced tiles. Several heuristics in the literature purport to improve on this—see, for example, [Nilsson:1971](#), [Mostow+Prieditis:1989](https://www.ijcai.org/Proceedings/89-1/Papers/112.pdf), and [Hansson+al:1992](https://journals.lww.com/spinejournal/Abstract/1991/01000/A_Prospective_Study_of_Work_Perceptions_and.1.aspx). Test these claims by implementing the heuristics and comparing the performance of the resulting algorithms.\
+> **翻译:**\
+我们为 8 数码问题给出了两个简单的启发式函数方案：曼哈顿距离和错位的瓷砖。文献中的一些启发式函数算法声称在此基础上进行了改进，例如，Nilsson:1971, Mostow+Prieditis:1989, 和Hansson+al:1992。请实现这些启发式函数，比较这些算法的性能。

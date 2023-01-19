@@ -189,7 +189,7 @@
 
 **参考答案**
 >1. The failure of $Suck$ action doesn’t cause any problem at all as long as we replace
-the reflex agent’s $‘Suck’$ action by $‘Suck\ until\ clean’$\
+the reflex agent’s $‘Suck’$ action by $‘Suck\ until\ clean’$.\
 If the dirt sensor can be wrong on each step, then the agent
 might want to wait for a few steps to get a more reliable measurement before deciding whether to $Suck$ or
 move on to a new square. Obviously, there is a trade-off because waiting too long means that dirt remains
