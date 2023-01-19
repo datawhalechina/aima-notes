@@ -79,3 +79,55 @@
 # Exercise 23
 
 > 编写一个程序，将两个 Web 页面的 url 作为输入，并找到从一个到另一个的链接路径。合适的搜索策略是什么？双向搜索会是个好主意吗？搜索引擎可以用来实现 predecessor function 吗?
+
+
+# Exercise 28
+> Sometimes there is no good evaluation function for a problem but there is a good comparison method: a way to tell whether one node is better than another without assigning numerical values to either. Show that this is enough to do a best-first search. Is there an analog of A for this setting?\
+**翻译:**\
+有时，对于一个问题没有好的评价函数，但有一个好的比较方法：告诉一个节点是否比另一个节点好，而不给任何一个节点指定数值的方法。证明这足以做一个最佳优先搜索。在这种情况下是否有A的类似物？
+
+# Exercise 29
+> Devise a state space in which A using returns a suboptimal solution with an $h(n)$ function that is admissible but inconsistent.\
+**翻译:**\
+设计一个状态空间，其中A使用返回一个次优解的$h(n)$函数，是可接受的，但不一致。
+
+# Exercise 35
+> We saw on page that the straight-line distance heuristic leads greedy best-first search astray on the problem of going from Iasi to Fagaras. However, the heuristic is perfect on the opposite problem: going from Fagaras to Iasi. Are there problems for which the heuristic is misleading in both directions?\
+**翻译:**\
+我们在页面上看到，从Iasi到Fagaras的问题上，将直线距离作为启发函数，会把贪心最佳优先搜索引入歧途。然而，从Fagaras到Iasi这个相反的问题上，启发式却是完美的。那么，是否存在这样的问题，启发式在两个方向上都有误导？
+
+# Exercise 36
+Invent a heuristic function for the 8-puzzle that sometimes overestimates, and show how it can lead to a suboptimal solution on a particular problem. (You can use a computer to help if you want.) Prove that if $h$ never overestimates by more than $c$, A using $h$ returns a solution whose cost exceeds that of the optimal solution by no more than $c$.\
+**翻译:**\
+请为8 数码问题发明一个有时会高估的启发式函数，并说明它如何在一个特定问题上导致次优解(你可以使用计算机来帮助你)。证明：如果$h$从未高估过$c$，那么A使用&h&得到的解决方案的成本比最优解决方案的成本多出不超过$c$。
+
+# Exercise 37
+Prove that if a heuristic is consistent, it must be admissible. Construct an admissible heuristic that is not consistent.\
+**翻译:**\
+证明：如果一个启发式函数是一致的，它一定是可接受的。构建一个不一致的可接受的启发式函数。
+
+# Exercise 38(tsp-mst-exercise)
+The traveling salesperson problem (TSP) can be solved with the minimum-spanning-tree (MST) heuristic, which estimates the cost of completing a tour, given that a partial tour has already been constructed. The MST cost of a set of cities is the smallest sum of the link costs of any tree that connects all the cities.
+1. Show how this heuristic can be derived from a relaxed version of the TSP.
+2. Show that the MST heuristic dominates straight-line distance.
+3. Write a problem generator for instances of the TSP where cities are represented by random points in the unit square.
+4. Find an efficient algorithm in the literature for constructing the MST, and use it with A graph search to solve instances of the TSP.
+
+**翻译:**\
+旅行商问题（TSP）可以用最小生成树（MST）启发式函数来求解，这种启发式函数在已经完成的一部分旅行基础上，预估完成一次旅行的成本。一组城市的MST成本是连接所有城市的树中的那个最小链接成本之和。
+1. 说明如何从TSP的宽松版本中得到这种启发式函数。
+2. 证明MST启发式函数在直线距离上占优势。
+3. 为TSP的实例写一个问题生成器，其中城市由单位面积上的随机点代表。
+4. 在文献中找到一种构建MST的有效算法，并将其与A图搜索一起用于解决TSP的实例。
+
+
+# Exercise 39(Gaschnig-h-exercise)
+On page 116, we defined the relaxation of the 8-puzzle in which a tile can move from square A to square B if B is blank. The exact solution of this problem defines **Gaschnig's heuristic** [Gaschnig:1979](https://www.semanticscholar.org/paper/Performance-measurement-and-analysis-of-certain-Gaschnig/2ce6e2ce79a59e253cc82efabcc73b1b190e91be). Explain why Gaschnig’s heuristic is at least as accurate as $h1$ (misplaced tiles), and show cases where it is more accurate than both $h1$ and $h2$ (Manhattan distance). Explain how to calculate Gaschnig’s heuristic efficiently.\
+**翻译:**\
+在第116页 ，我们定义了 8 数码问题的松弛问题：*如果方格 B 是空格，那么滑块可以从方格 A 移动到方格 B*。 这个问题的精确解定义了Gaschnig启发式函数（Gaschnig:1979）。\
+请解释为什么Gaschnig的启发式至少和$h1$（错位的瓷砖）一样准确，并说明它比$h1$和$h2$（曼哈顿距离）都要准确的情况。如何有效地计算Gaschnig的启发式函数。
+# Exercise 40
+We gave two simple heuristics for the 8-puzzle: Manhattan distance and misplaced tiles. Several heuristics in the literature purport to improve on this—see, for example, [Nilsson:1971](#), [Mostow+Prieditis:1989](https://www.ijcai.org/Proceedings/89-1/Papers/112.pdf), and [Hansson+al:1992](https://journals.lww.com/spinejournal/Abstract/1991/01000/A_Prospective_Study_of_Work_Perceptions_and.1.aspx). Test these claims by implementing the heuristics and comparing the performance of the resulting algorithms.\
+**翻译:**\
+我们为 8 数码问题给出了两个简单的启发式函数方案：曼哈顿距离和错位的瓷砖。文献中的一些启发式函数算法声称在此基础上进行了改进，例如，Nilsson:1971, Mostow+Prieditis:1989, 和Hansson+al:1992。\
+通过实现启发式函数，比较这些算法的性能来验证这些说法。

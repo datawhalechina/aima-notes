@@ -175,3 +175,37 @@
 
 > 对于位置传感器被替换为”碰撞“传感器的情况，该传感器可以检测到智能体进入障碍物或者越过环境边界的尝试。重复练习2.13。假设碰撞传感器停止工作，智能体该如何表现？
 
+
+# Exercise 16
+
+>The vacuum environments in the preceding exercises have all been deterministic. Discuss possible agent programs for each of the following stochastic versions:
+> 1. Murphy’s law: twenty-five percent of the time, the $Suck$ action fails to clean the floor if it is dirty and deposits dirt onto the floor if the floor is clean. How is your agent program affected if the dirt sensor gives the wrong answer 10% of the time?
+> 2. Small children: At each time step, each clean square has a 10% chance of becoming dirty. Can you come up with a rational agent design for this case?
+
+### 翻译
+> 前面练习中的真空环境都是确定性的。下面讨论一下以下每个随机版本的可能代理程序。
+> 1. 墨菲定律：25%的时间里，如果地板是脏的，$吸吮$动作就不能清洁; 如果地板是干净的，就会在地板上沉积灰尘。如果污垢传感器在10%的时间内给出错误的答案，你的代理程序会受到什么影响？
+> 2. Small children：在每个时间步骤中，每个干净的方块有10%的机会变脏。你能为这种情况想出一个合理的代理设计吗？
+
+### 参考答案
+>1. The failure of $Suck$ action doesn’t cause any problem at all as long as we replace
+the reflex agent’s $‘Suck’$ action by $‘Suck\ until\ clean’$\
+If the dirt sensor can be wrong on each step, then the agent
+might want to wait for a few steps to get a more reliable measurement before deciding whether to $Suck$ or
+move on to a new square. Obviously, there is a trade-off because waiting too long means that dirt remains
+on the floor (incurring a penalty), but acting immediately risks either dirtying a clean square or ignoring a
+dirty square (if the sensor is wrong). A rational agent must also continue touring and checking the squares
+in case it missed one on a previous tour (because of bad sensor readings). It is not immediately obvious
+how the waiting time at each square should change with each new tour. These issues can be clarified by
+experimentation, which may suggest a general trend that can be verified mathematically. This problem is a
+partially observable Markov decision process, which we’ll talk about in Chapter 17. Such problems are
+hard in general, but some special cases may be amenable to careful analysis. \
+> 只要我们把智能体反应的'吸食'动作换成'吸食到干净为止'，吸食动作的失败就完全不会造成任何问题。\
+如果污垢传感器在每一步上都可能出错，那么智能体可以选择等待几步以获得更可靠的测量结果，然后再决定是吸食还是继续前进到一个新的位置。显然，这是一个权衡，因为等待的时间太长意味着污物仍在地板上（招致惩罚），但立即行动有可能弄脏一个干净的方块或忽略一个肮脏的方块（如果传感器是错误的）。一个理性的智能体还必须继续巡视和检查每个位置，以防它在以前的巡视中错过了一个位置（因为传感器的读数不好）。每一个方块的等待时间应该如何随着每一次新的巡查而变化，这一点很困难，不过这些问题可以通过实验来明晰，需要用数学方法验证来一般趋势。这个问题是一个部分可观察的马尔可夫决策过程，我们将在第17章中谈论这个问题。这样的问题一般来说是很难的，但一些特殊情况可能是可以仔细分析的。
+> 2. In this case, the agent must keep touring the squares indefinitely. The probability that a square is dirty
+increases monotonically with the time since it was last cleaned, so the rational strategy is, roughly
+speaking, to repeatedly execute the shortest possible tour of all squares. (We say “roughly speaking”
+because there are complications caused by the fact that the shortest tour may visit some squares twice,
+depending on the geography.) This problem is also a partially observable Markov decision process.\
+在这种情况下，智能体必须无限期地巡视这些方格。一个广场被弄脏的概率随着它上次被清理的时间而单调增加，因此，大致上说，合理的策略是重复执行对所有广场的最短巡回。(我们说 "大致上 "是因为最短的巡视可能会访问某些方格两次，这是一个复杂的事实，取决于地理环境）。这个问题也是一个部分可观察的马尔可夫决策过程。
+
