@@ -200,9 +200,9 @@
 **参考解答** ： 
 
 > 基于目标的智能体程序
-
+> ***
 > function GOAL-BASED-AGENT(percept) returns 一个动作  
->  persistent: state, 智能体对世界状态的当前理解  
+>> persistent: state, 智能体对世界状态的当前理解  
 >  goal, 智能体希望实现的目标的描述  
 >  rules, 一组条件-动作规则  
 >  action, 最近的动作，初始为空  
@@ -212,9 +212,9 @@
 >  return action
 
 > 基于效用的智能体程序
-
+> ***
 > function UTILITY-BASED-AGENT(percept) returns 一个动作  
->  persistent: state, 智能体对世界状态的当前理解  
+>>  persistent: state, 智能体对世界状态的当前理解  
 >  possible states, 可能使快乐最大化的状态  
 >  rules, 一组条件-动作规则  
 >  action, 最近的动作，初始为空  
@@ -249,14 +249,11 @@
 > 对于位置传感器被替换为”碰撞“传感器的情况，该传感器可以检测到智能体进入障碍物或者越过环境边界的尝试。重复练习2.13。假设碰撞传感器停止工作，智能体该如何表现？
 
 
-<<<<<<< Updated upstream
 > 参考答案：
 > 这个问题乍一看非常相似;主要区别在于，智能体不必使用位置感知来构建地图，而是必须“发明”自己的位置(毕竟，这些位置只是表示状态空间图的数据结构中的节点)。当检测到一个碰撞时，智能体认为它仍然在相同的位置，并可以在地图上添加一面墙。
 对于网格环境，智能体可以跟踪它的(x,y)位置，因此可以判断它何时返回到旧状态。然而，在一般情况下，没有简单的方法来判断一个状态是新的还是旧的。
 
 
-=======
->>>>>>> Stashed changes
 # Exercise 16
 
 > The vacuum environments in the preceding exercises have all been deterministic. Discuss possible agent programs for each of the following stochastic versions:
