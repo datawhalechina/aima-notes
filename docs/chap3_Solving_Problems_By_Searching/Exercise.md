@@ -3,6 +3,16 @@
 # Exercise 1
 
 > Explain why problem formulation must follow goal formulation.
+>
+> 解释为什么问题形式化必须在目标形式化之后。
+
+
+
+**参考解答** ： 
+
+> 在目标形式化时，我们决定关注世界的哪些方面，而忽略或抽象掉什么方面。在问题形式化中，我们决定如何处理重要方面（并忽略其他方面）。如果我们首先形式化问题，我们将不知道要关注什么或忽视什么。也就是说，在目标形式化、问题形式化和问题解决之间存在一个迭代循环，直到找到一个足够有用和有效的解决方案为止
+>
+
 
 # Exercise 2
 
@@ -23,6 +33,66 @@
 **参考解答：**
 
 **（待补充）**
+
+
+
+# Exercise 3
+
+> Your goal is to navigate a robot out of a maze. The robot starts in the center of the maze facing north. You can turn the robot to face north, east, south, or west. You can direct the robot to move forward a certain distance, although it will stop before hitting a wall.
+1. Formulate this problem. How large is the state space?
+2. In navigating a maze, the only place we need to turn is at the intersection of two or more corridors. Reformulate this problem using this observation. How large is the state space now?
+3. From each point in the maze, we can move in any of the four directions until we reach a turning point, and this is the only action we need to do. Reformulate the problem using these actions. Do we need to keep track of the robot’s orientation now?
+4. In our initial description of the problem we already abstracted from the real world, restricting actions and removing details. List three such simplifications we made.
+>
+> 你的目标是引导机器人走出迷宫。机器人最开始在迷宫的中心，并且面朝北方。你可以将机器人转向北、东、南或西。您可以指示机器人向前移动一定距离，但它会在撞到墙壁之前停下来。
+> 
+>1. 形式化这个问题。状态空间有多大？
+>2. 在走迷宫时，我们唯一需要转弯的地方是两条或多条走廊的交汇处。使用这个观察重新形式化这个问题。现在状态空间有多大？
+>3. 从迷宫中的每个点，我们可以向四个方向中的任何一个方向移动，直到到达一个转折点，这是我们唯一需要做的动作。使用这些动作重新形式化问题。我们现在需要跟踪机器人的方向吗？
+>4. 在我们对问题的最初描述中，我们已经从现实世界中抽象出来，限制了动作并删除了细节。列出我们所做的三个简化。
+
+
+
+**参考解答** ： 
+
+>1. 
+> - 状态：机器人位置和朝向的状态描述。  
+> - 初始状态：在迷宫中心，面朝北方。  
+> - 动作：向前移动一定距离d；改变机器人的方向。  
+> - 转移模型：将状态和动作映射为一个结果状态。  
+> - 目标状态: 机器人在出口处。  
+> - 动作代价：移动的距离。  
+> - 状态空间是无限大的，因为机器人可以处在任何位置。 
+> 
+>2. 
+> - 状态：机器人当前所处的交汇处，以及它所面对的方向  
+> - 初始状态：在迷宫中心，面朝北方。  
+> - 动作：移动到前面的下一个交汇处（如果存在）。转向新的方向。  
+> - 转移模型：将状态和动作映射为一个结果状态。  
+> - 目标状态：机器人在出口处。  
+> - 动作代价：移动的距离。  
+> - 状态空间有 4n 个状态，其中 n 是交叉点的数量。  
+> 
+>3. 
+> - 状态：机器人当前所处的交汇处，以及它所面对的方向
+> - 初始状态：在迷宫中心，面朝北方。
+> - 动作：移动到北、南、东或西的下一个交汇处。
+> - 转移模型：将状态和动作映射为一个结果状态。
+> - 目标状态: 机器人在出口处。
+> - 动作代价：移动的距离。
+> - 状态空间有 4n 个状态，其中 n 是交叉点的数量。
+> - 不再需要跟踪机器人的方向，因为它与预测我们行动的结果无关，也不是目标的一部分。
+> 
+>4. 
+> - 状态抽象：
+> > - 忽略机器人离地面的高度，不管它是否偏离垂直方向。
+> > - 机器人只能面向四个方向。
+> > - 世界其他地区被忽视：迷宫中其他机器人的可能性，环境对机器人运动影响程度。
+> 
+> - 行动抽象：
+> > - 我们假定了所有位置都可以安全到达：机器人不会被卡住或损坏。
+> > - 机器人可以随心所欲地移动，而无需重新进行充电。
+> > - 简化的移动系统：向前移动一定距离，而不是控制每个单独的电机并观察传感器以检测碰撞。
 
 # Exercise 4
 
@@ -124,6 +194,48 @@
 
 4. **（待补充）**
 
+# Exercise 10 (negative-g-exercise)
+
+> On page, we said that we would not consider problems with negative path costs. In this exercise, we explore this decision in more depth.
+> 1. Suppose that actions can have arbitrarily large negative costs; explain why this possibility would force any optimal algorithm to explore the entire state space.
+> 2. Does it help if we insist that step costs must be greater than or equal to some negative constant $c$? Consider both trees and graphs.
+> 3. Suppose that a set of actions forms a loop in the state space such that executing the set in some order results in no net change to the state. If all of these actions have negative cost, what does this imply about the optimal behavior for an agent in such an environment?
+> 4. One can easily imagine actions with high negative cost, even in domains such as route finding. For example, some stretches of road might have such beautiful scenery as to far outweigh the normal costs in terms of time and fuel. Explain, in precise terms, within the context of state-space search, why humans do not drive around scenic loops indefinitely, and explain how to define the state space and actions for route finding so that artificial agents can also avoid looping.
+> 5. Can you think of a real domain in which step costs are such as to cause looping?
+>
+> 在正文中，我们表示不会考虑负路径代价的问题。在本练习中，我们将更深入地探讨这一决定。
+
+>1. 假设动作可能会产生任意大的负代价；解释为什么这种可能性会导致任何最佳算法探索整个状态空间。
+>2. 如果我们坚持每步代价必须大于或等于某个负常数 $c$ ，这有帮助吗? 同时考虑树和图。
+>3. 假设一组动作在状态空间中形成一个循环，即以某种顺序执行该集合不会导致状态发生实质性变化。如果所有这些动作都具有负成本，那么这意味着智能体在这样的环境中的最佳动作是什么？
+>4. 人们可以很容易地想象出具有高负代价的行动，甚至在诸如路线查找之类的领域。例如，一些路段的风景可能非常美丽，以至于在时间和燃料方面远远超过了正常代价。准确地说，在搜索状态空间的背景下，解释为什么人类不会无限期地在风景优美的环路周围行驶，并解释如何定义状态空间和路线搜索的动作，以便人工智能也可以避免环路。
+>5. 你能想到一个因为每步代价导致循环的真实情况吗？
+
+
+
+**参考解答** ： 
+
+>1. 因为存在负代价，不管怎么走，都可能带来任意小的代价（之前的代价 + 负代价）。因此，需要用尽所有可能的路径，以确保找到最佳路径。
+>2. 在树的情况下是有帮助的。如果我们知道状态空间的最大深度，那么任何剩余 $d$ 级的步进代价最多为 $cd$，因此任何比 $cd$ 差的路径都可以被剪枝。  
+在图的情况下，这并不起任何作用。因为图中可以存在循环，如果存在一个包含负代价的节点，总是可以利用这个节点不断降低当前最佳路径代价，形成另一个当前最佳路径代价。
+>3. 智能体应该永远循环下去，因为它会降低代价函数的值（除非它能找到另一个更好的循环）。
+>4. 风景优美的环路的价值在每次重新访问时都会降低；一个新奇的风景是一个很好的体验，但是在一个小时内第十次看到相同的风景是乏味的。为了适应这一点，我们必须扩展状态空间以包含一个记忆状态现在不仅由当前位置表示，而且由当前位置和一系列已经访问过的位置表示。访问新位置的代价是之前访问次数的（递增）函数。
+>5. 吃垃圾食品和去上课。
+
+# Exercise 15
+
+> Does a finite state space always lead to a finite search tree? How about a finite state space that is a tree? Can you be more precise about what types of state spaces always lead to finite search trees? (Adapted from , 1996.)
+>
+> 有限状态空间总是导致有限搜索树吗？有限状态空间是树呢？你能更准确地说明什么类型的状态空间总是导致有限的搜索树吗？（改编自1996年。）
+
+
+**参考解答** ： 
+
+
+> 有限状态空间并不总是导致有限搜索树。例如，书中罗马尼亚城市地图示例中的状态空间是有限的：{In(Arad), In(Zerind),...,In(Eforie)}（包含 20 个州），但是使用 Go(City Name) 我们可以无限地通过任何循环路径，从而产生无限的搜索树。
+> 在有限状态空间是树的情况下，根据定义不存在循环路径（循环），因此搜索树将是有限的。
+> 任何不包含循环路径的合法结构也将具有有限搜索树。有限有向无环图 (DAG) 符合描述，因为根据定义其不包含循环（有向只是意味着从一个状态映射到另一个状态的动作不对称，因此不能在两个相邻状态之间无限循环）。
+
 # Exercise 17
 
 > 下列哪些是正确的，哪些是错误的？解释你的答案。
@@ -152,6 +264,27 @@
 
 **参考解答：**
 浏览网页时，我们只能通过访问网页来生成网页的后继。然后我们可以进行广度优先搜索，或者最佳优先搜索。为了让链接能够到达目标，启发式函数可以是起始页和目标页之间共有的单词数的函数。搜索引擎可以帮助我们得到完整的网页关系图，并可以向我们提供网页之间的链接，这样我们就可以进行双向搜索。
+
+
+# Exercise 25 (search-special-case-exercise)
+
+> Prove each of the following statements, or give a counterexample:
+> 1. Breadth-first search is a special case of uniform-cost search.
+> 2. Depth-first search is a special case of best-first tree search.
+> 3. Uniform-cost search is a special case of A search.
+>
+> 证明以下各命题，或给出反例：
+> 1.广度优先搜索是一致代价搜索的一个特例。
+> 2.深度优先搜索是最佳优先树搜索的一个特例。
+> 3.一致代价搜索是A搜索的一个特例。
+
+
+
+**参考解答** ： 
+
+>1. 当每步代价相等时，广度优先搜索就是一致代价搜索。
+>2. 深度优先搜索是$f(n) = −depth(n)$的最佳优先搜索。
+>3. A*搜索是 $g(n)+h(n)$，一致代价搜索$g(n)$。即一致代价搜索是$A^*$搜索在$h(n) = 0$时的情况。
 
 # Exercise 27
 
